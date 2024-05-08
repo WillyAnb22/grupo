@@ -4,10 +4,22 @@
     box-sizing: border-box;
     text-transform: capitalize;
     letter-spacing: .5px;
+    /* font-family: namo; */
 }
 body{
-    background-color: antiquewhite;
+    /* background-color: rgb(255, 255, 219); */
+    background-image: url("https://st2.depositphotos.com/1005721/5186/i/450/depositphotos_51867195-stock-photo-floral-pattern-flower-background-on.jpg");
+    /* background-image: url("https://st4.depositphotos.com/1275301/21772/i/450/depositphotos_217729786-stock-illustration-watercolor-floral-hand-drawn-colorful.jpg"); */
 }
+@font-face {
+    font-family: name;
+    src: url(FLOWER.ttf);
+}
+@font-face {
+    font-family: namo;
+    src: url(Flower1.ttf);
+}
+
 .baner {
     width: 100%;
     height: 25vh;
@@ -20,10 +32,11 @@ body{
 }
 
 #titulo {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
+    font-family: name;
+    color: black;
     text-align: center;
-    font-size: 500%;
+    /* font-weight: bold; */
+    font-size: 550%;
     line-height: 80px;
 }
 
@@ -53,24 +66,45 @@ body{
 
 /* Estilo para las tarjetas */
 .card {
-    background-color: #e0f2f1; 
+    background-color: rgba(214, 214, 202, 0.457); 
     border-radius: 15px; 
     margin: 20px; 
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/010/790/281/non_2x/floral-seamless-pattern-in-black-and-white-line-style-doodle-flowers-textile-print-vintage-nature-graphic-bell-flower-meadow-flowers-and-leaves-motif-vector.jpg"); */
     padding: 20px; 
-    width: calc(33.33% - 40px); /* Ancho de las tarjetas (ajustable según el número de tarjetas por fila) */
+    width: 300px; /* Ancho de las tarjetas (ajustable según el número de tarjetas por fila) */
     text-align: center; 
+    /* display: flex;
+    justify-content: center; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
     
 }
-
+.img-fluid{
+    max-height: 400px
+}
+.card-body{
+    display: flex;
+    flex-direction: column; /* Columna vertical */
+    justify-content: center;
+}
+.btn-primary{
+    background-color: rgba(255, 255, 255, 0.702);
+    border: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: namo;
+}
 .card-title {
-    font-family: 'Arial', sans-serif; /* Fuente de letra elegante */
-    font-size: 1.5em; /* Tamaño de fuente */
+    font-family: namo; /* Fuente de letra elegante */
+    font-size: 40px;
+    font-weight: bold; /* Tamaño de fuente */
     color: #333; /* Color de texto */
 }
 .card-text {
-    font-family: 'Arial', sans-serif; /* Fuente de letra elegante */
-    color: #666; /* Color de texto */
+    font-family: namo; /* Fuente de letra elegante */
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 /* Media query para dispositivos más pequeños */
@@ -81,7 +115,7 @@ body{
 }
 /* Estilo para las tarjetas del carrito */
 .list-group-item {
-    background-color: #e0f2f1; /* Color de fondo verde claro */
+    background-color: #a2ebe7; /* Color de fondo verde claro */
     border: none; /* Eliminar borde */
     border-radius: 15px; /* Bordes redondeados */
     margin-bottom: 20px; /* Espacio entre las tarjetas */
